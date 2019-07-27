@@ -1,15 +1,6 @@
 export ZSH=/usr/share/oh-my-zsh
 
-# Use vim bindings
-bindkey -v
-
-## ESC + v as vim edit
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd v edit-command-line
-
 # Constants
-EDITOR=vim
 # ZSH_THEME="cobalt2"
 HISTFILE=~/.histfile
 HISTSIZE=3000
@@ -21,6 +12,10 @@ plugins=(
    docker-compose
    copyfile
 )
+
+# Antibody
+source <(antibody init)
+antibody bundle < ~/.zsh_plugins
 
 # Autocompletion
 zstyle :compinstall filename '/home/dzordzu/.zshrc'
@@ -45,6 +40,11 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-# Antibody
-source <(antibody init)
-antibody bundle < ~/.zsh_plugins
+# Use vim bindings
+EDITOR=/bin/vim
+bindkey -v
+
+## ESC + v as vim edit
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
