@@ -29,9 +29,6 @@ setopt COMPLETE_ALIASES
 autoload -Uz promptinit
 promptinit
 
-# Reversed history search
-bindkey '^R' history-incremental-search-backward
-
 # ZSH config
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -43,6 +40,9 @@ source $ZSH/oh-my-zsh.sh
 # Use vim bindings
 EDITOR=/bin/vim
 bindkey -v
+
+# Reversed history search
+bindkey '^R' history-incremental-search-backward
 
 ## ESC + v as vim edit
 autoload -U edit-command-line
