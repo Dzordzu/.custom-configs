@@ -3,10 +3,13 @@
 # Install base packages
 pacman -Sy git base base-devel gcc python cmake networkmanager sudo
 
+# Set hostname
+echo "dzordzu" > /etc/hostname
+
 # Set hosts
 echo "127.0.0.1   localhost" >> /etc/hosts
 echo "::1   localhost" >> /etc/hosts
-echo "127.0.1.1   hostname.localdomain hostname" >> /etc/hosts
+echo "127.0.1.1   dzordzu.localdomain dzordzu" >> /etc/hosts
 
 # Install trizen
 git clone https://aur.archlinux.org/trizen.git
@@ -14,13 +17,16 @@ cd trizen
 makepkg -si
 rm -rf ./trizen
 
+# Create user
+# useradd 
+
 # Install other packages
 trizen -Sy \
   bluez \
   expac \
   xorg \
   xorg-server \
-  xorg-xinit
+  xorg-xinit \
   plasma \
   sdm \
   kcalc \
@@ -48,11 +54,12 @@ trizen -Sy \
   nodejs \
   firefox \
   tor \
-  torsocks
+  torsocks \
+  thunderbird \
+  telegram-desktop
   
 # Config mpsyt
 mpsyt "set player mpv" &
 mpsyt "set search_music false" &
 kill -9 $(pgrep -x mpsyt)
-
 
