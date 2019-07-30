@@ -1,0 +1,99 @@
+
+[installation]
+script = [
+   "python.sh",
+   "trizen.sh",
+]
+trizen = [
+   
+   # BASE
+   "git",
+   "base",
+   "base-devel",
+   "gcc",
+   "cmake",
+   "sudo",
+   "wget",
+   "curl",
+
+   # DEVICES
+   "networkmanager",
+   "bluez-alsa-git",
+   "bluez-hcitool",
+   "bluez-util",
+
+   
+   # SYSTEM
+   "grub",
+   "grub-customizer" ,
+   "os-prober",
+   "efibootmgr",
+   "alsa",
+
+   # KDE
+   "wayland",
+   "xorg",
+   "xorg-server",
+   "xorg-xinit",
+   "plasma",
+   "sdm",
+   "dolphin",
+
+   # KDE TOOLS
+   "konsole",
+   "kcalc",
+   "ktexteditor",
+   "kate", 
+   "kwin",
+   "okular", 
+   "gwenview",
+   "oxygen"
+
+   # KDE CONNECT
+   "kde-connect",
+
+   # VIM
+   "gvim",
+   "vim-instant-markdown",
+
+   # ZSH
+   "zsh",
+   "oh-my-zsh-git",
+   "antibody",
+
+   # TMUX
+   "tmux",
+
+   # BROWSERS
+   "firefox",
+   "google-chrome",
+   
+   # DEVOPS
+   "ansible",
+   "docker",
+   "docker-compose",
+   "virtualbox",
+   "gdb",
+   "bind-tools"
+   "openvpn",
+   "networkmanager-openvpn",
+
+   # SECURITY
+   "hashcat",
+   "bitwarden",
+   "wireshark",
+   
+
+   # MUSIC
+   "audacious",
+   "mps-youtube",
+   "mpv",
+   "cmus",
+  
+   # COMMUNICATION 
+   "telegram-desktop",
+   "slack-desktop",
+
+   # OTHER
+   "screenfetch", # where the hell can i put it
+]
