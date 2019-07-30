@@ -3,6 +3,11 @@
 # Install base packages
 pacman -Sy git base base-devel gcc python cmake networkmanager sudo
 
+# Set hosts
+echo "127.0.0.1   localhost" >> /etc/hosts
+echo "::1   localhost" >> /etc/hosts
+echo "127.0.1.1   hostname.localdomain hostname">> /etc/hosts
+
 # Install trizen
 git clone https://aur.archlinux.org/trizen.git
 cd trizen
