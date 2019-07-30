@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Install base packages
+pacman -Sy git base base-devel gcc python cmake networkmanager
+
+# Install trizen
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+rm -rf ./trizen
+
+# Install other packages
+trizen -Sy \
+  bluez \
+  expac \
+  xorg \
+  xorg-server \
+  xorg-xinit
+  plasma \
+  sdm \
+  kcalc \
+  ktexteditor \
+  kate \
+  kwin \
+  grub \
+  grub-customizer \
+  vim \
+  vim-instant-markdown \
+  zsh \
+  oh-my-zsh \
+  mps-youtube \
+  mpv \
+  docker \
+  docker-compose \
+  bitwarden \
+  antibody \
+  openssh \
+  curl \
+  wget \
+  jq \
+  zip \
+  gzip \
+  nodejs \
+  firefox \
+  tor \
+  torsocks \
+  
