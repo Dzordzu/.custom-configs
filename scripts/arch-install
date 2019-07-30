@@ -43,5 +43,11 @@ trizen -Sy \
   nodejs \
   firefox \
   tor \
-  torsocks \
+  torsocks
   
+# Config mpsyt
+mpsyt "set player mpv" &
+mpsyt "set search_music false" &
+kill -9 $(pgrep -x mpsyt)
+
+
