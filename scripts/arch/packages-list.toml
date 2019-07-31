@@ -8,6 +8,7 @@ trizen = [
    
    # BASE
    "git",
+   "clang",
    "base",
    "base-devel",
    "gcc",
@@ -33,6 +34,7 @@ trizen = [
    # KDE
    "wayland",
    "xorg",
+   "xclip",
    "xorg-server",
    "xorg-xinit",
    "plasma",
@@ -40,6 +42,7 @@ trizen = [
    "dolphin",
 
    # KDE TOOLS
+   "kscreen",
    "konsole",
    "kcalc",
    "ktexteditor",
@@ -67,6 +70,10 @@ trizen = [
    # BROWSERS
    "firefox",
    "google-chrome",
+
+   # TOR
+   "tor",
+   "torsocks",
    
    # DEVOPS
    "ansible",
@@ -76,6 +83,7 @@ trizen = [
    "gdb",
    "bind-tools"
    "openvpn",
+   "openssh",
    "networkmanager-openvpn",
 
    # SECURITY
@@ -91,9 +99,13 @@ trizen = [
    "cmus",
   
    # COMMUNICATION 
+   "thunderbird",
    "telegram-desktop",
    "slack-desktop",
 
    # OTHER
-   "screenfetch", # where the hell can i put it
+   "gzip",
+   "zip",
+   "tree",
+   "screenfetch" # where the hell can i put it
 ]
