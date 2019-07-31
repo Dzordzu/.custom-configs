@@ -82,7 +82,7 @@ trizen = [
    "docker-compose",
    "virtualbox",
    "gdb",
-   "bind-tools"
+   "bind-tools",
    "openvpn",
    "openssh",
    "networkmanager-openvpn",
