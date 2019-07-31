@@ -50,7 +50,7 @@ trizen = [
    "kwin",
    "okular", 
    "gwenview",
-   "oxygen"
+   "oxygen",
 
    # KDE CONNECT
    "kde-connect",
