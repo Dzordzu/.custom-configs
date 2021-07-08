@@ -1,3 +1,4 @@
+filetype plugin on
 call plug#begin('~/.vim/plugged')
 
 
@@ -16,10 +17,19 @@ Plug 'airblade/vim-gitgutter'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'jtratner/vim-flavored-markdown'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-
+" C++
+Plug 'rip-rip/clang_complete'
 call plug#end()
 
+"""""
+" Settings that are necessey to run plugins
+""""""
+let g:clang_library_path='/usr/lib64/libclang.so.8'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

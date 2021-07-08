@@ -1,0 +1,112 @@
+
+[installation]
+script = [
+   "python.sh",
+   "trizen.sh",
+]
+trizen = [
+   
+   # BASE
+   "git",
+   "clang",
+   "base",
+   "base-devel",
+   "gcc",
+   "cmake",
+   "sudo",
+   "wget",
+   "curl",
+
+   # DEVICES
+   "networkmanager",
+   "bluez-alsa-git",
+   "bluez-hcitool",
+   "bluez-util",
+
+   
+   # SYSTEM
+   "grub",
+   "grub-customizer" ,
+   "os-prober",
+   "efibootmgr",
+   "alsa",
+
+   # KDE
+   "wayland",
+   "xorg",
+   "xclip",
+   "xorg-server",
+   "xorg-xinit",
+   "plasma",
+   "sdm",
+   "dolphin",
+
+   # KDE TOOLS
+   "kscreen",
+   "konsole",
+   "kcalc",
+   "ktexteditor",
+   "kate", 
+   "kwin",
+   "okular", 
+   "gwenview",
+   "oxygen",
+
+   # KDE CONNECT
+   "kde-connect",
+
+   # VIM
+   "gvim",
+   "vim-instant-markdown",
+
+   # ZSH
+   "zsh",
+   "oh-my-zsh-git",
+   "antibody",
+   "hstr-git",
+
+   # TMUX
+   "tmux",
+
+   # BROWSERS
+   "firefox",
+   "google-chrome",
+
+   # TOR
+   "tor",
+   "torsocks",
+   
+   # DEVOPS
+   "ansible",
+   "docker",
+   "docker-compose",
+   "virtualbox",
+   "gdb",
+   "bind-tools",
+   "openvpn",
+   "openssh",
+   "networkmanager-openvpn",
+
+   # SECURITY
+   "hashcat",
+   "bitwarden",
+   "wireshark",
+   
+
+   # MUSIC
+   "audacious",
+   "mps-youtube",
+   "mpv",
+   "cmus",
+  
+   # COMMUNICATION 
+   "thunderbird",
+   "telegram-desktop",
+   "slack-desktop",
+
+   # OTHER
+   "gzip",
+   "zip",
+   "tree",
+   "screenfetch" # where the hell can i put it
+]
